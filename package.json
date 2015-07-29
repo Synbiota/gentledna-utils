@@ -1,0 +1,22 @@
+{
+  "name": "gentledna-utils",
+  "version": "0.0.1",
+  "description": "Utils functions for the gentledna library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Synbiota/gentledna-utils.git"
+  },
+  "keywords": [
+    "gentledna"
+  ],
+  "author": "Alexandre Meunier",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Synbiota/gentledna-utils/issues"
+  },
+  "homepage": "https://github.com/Synbiota/gentledna-utils#readme"
+}
