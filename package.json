@@ -8,11 +8,6 @@
     "postinstall": "node ./build.js",
     "build": "node ./build.js"
   },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Synbiota/gentledna-utils.git"
@@ -20,7 +15,10 @@
   "keywords": [
     "gentledna"
   ],
-  "author": "Alexandre Meunier",
+  "author": "Synbiota Inc. <info@synbiota.com>",
+  "contributors": [
+    "Alexandre Meunier <alexandre@synbiota.com>"
+  ],
   "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/Synbiota/gentledna-utils/issues"
@@ -32,7 +30,7 @@
   "dependencies": {
     "babel": "^5.8.19",
     "glob": "^5.0.14",
-    "mkdirp": "^0.5.1",
-    "underscore": "^1.8.3"
+    "lodash": "^3.10.0",
+    "mkdirp": "^0.5.1"
   }
 }

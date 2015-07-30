@@ -3,7 +3,7 @@ var path = require('path');
 var fs = require('fs');
 var mkdirp = require('mkdirp');
 var babel = require('babel');
-var _ = require('underscore');
+var lodashTemplate = require('lodash/string/template');
 
 var dist = './dist';
 
@@ -18,7 +18,7 @@ var replaceHtmlRequires = function(filepath, content) {
     console.log('Injecting', templatepath, 'into', filepath);
     var absoluteTemplatepath = path.resolve(path.dirname(filepath), templatepath);
     var template = fs.readFileSync(absoluteTemplatepath, 'utf-8');
-    return _.template(template).source;
+    return lodashTemplate(template, {variable: 'data'}).source;
   });
 };
 
