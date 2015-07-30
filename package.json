@@ -29,7 +29,7 @@
     "lib": "./src"
   },
   "homepage": "https://github.com/Synbiota/gentledna-utils#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel": "^5.8.19",
     "glob": "^5.0.14",
     "mkdirp": "^0.5.1"
