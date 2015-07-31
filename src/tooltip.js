@@ -2,10 +2,10 @@ import template from './tooltip_template.html';
 import $ from 'jquery';
 import _ from 'underscore';
 
-class Tooltip {
+export default class Tooltip {
   constructor() {
     this.$el = $(template({}));
-    _.bindAll(this, 'move');
+    _.bindAll(this, 'move', 'hide');
   }
 
   insert() {
@@ -66,5 +66,3 @@ class Tooltip {
     });
   }
 }
-
-export default new Tooltip();
